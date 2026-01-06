@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "parkcraft:item/bismuth"
+    "layer0": "parkcraft:item/raw_bismuth"
   }
 }

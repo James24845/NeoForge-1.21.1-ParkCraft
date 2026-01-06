@@ -11,8 +11,10 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ParkCraft.MOD_ID);
 
     public static final DeferredItem<Item> BISMUTH = ITEMS.register("bismuth",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties()));  //bismuth
 
+    public static final DeferredItem<Item> RAW_BISMUTH = ITEMS.register("raw_bismuth",
+            () -> new Item(new Item.Properties())); // raw bismuth
 
 
 
