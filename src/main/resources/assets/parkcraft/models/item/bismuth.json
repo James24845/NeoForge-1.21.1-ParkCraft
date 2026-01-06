@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "tetures": {
+    "layer0": "parkcraft:item/bismuth"
+  }
+}
