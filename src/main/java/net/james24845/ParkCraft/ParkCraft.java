@@ -1,5 +1,6 @@
 package net.james24845.ParkCraft;
 
+import net.james24845.ParkCraft.block.ModBlocks;
 import net.james24845.ParkCraft.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -49,6 +50,7 @@ public class ParkCraft {
 
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -71,6 +73,11 @@ public class ParkCraft {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS)  {
             event.accept(ModItems.BISMUTH);
             event.accept(ModItems.RAW_BISMUTH);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.BISMUTH_BLOCK);
+            event.accept(ModBlocks.BISMUTH_ORE);
         }
     }
 

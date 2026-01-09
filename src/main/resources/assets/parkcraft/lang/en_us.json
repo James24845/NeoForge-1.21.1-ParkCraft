@@ -1,4 +1,10 @@
 {
  "item.parkcraft.bismuth": "Bismuth",
- "item.parkcraft.raw_bismuth": "Raw Bismuth"
+ "item.parkcraft.raw_bismuth": "Raw Bismuth",
+
+
+ "block.parkcraft.bismuth_block": "Block of Bismuth",
+ "block.parkcraft.bismuth_ore": "Bismuth Ore"
+
+
 }
