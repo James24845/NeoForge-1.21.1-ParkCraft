@@ -17,6 +17,24 @@ public class ModItems {
             () -> new Item(new Item.Properties())); // raw bismuth
 
 
+    //creating some new items ** BELOW ARE RAW MATERIALS FOR COASTERS **
+
+    public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
+            () -> new Item(new Item.Properties())); // steel Ingot
+
+    /*/
+    Steel Ingots will be a basic material for use in the coaster infrastructure themselves,
+    Beams, Supports, Tracks, Coaster Tracks, also misc. material in crafting recipes
+     */
+
+    public static final DeferredItem<Item> LARCADIA = ITEMS.register("larcadia",
+            () -> new Item(new Item.Properties()));
+
+    /*
+    Larcadia, otherwise known as a common crystal in the ground. Will be used for progression within the mod and for
+    different coaster tiers.
+     */
+
 
     public static void register(IEventBus eventBus){
 
