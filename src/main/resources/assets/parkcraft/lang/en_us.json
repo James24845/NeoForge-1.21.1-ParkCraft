@@ -6,7 +6,9 @@
 
 
  "block.parkcraft.bismuth_block": "Block of Bismuth",
- "block.parkcraft.bismuth_ore": "Bismuth Ore"
+ "block.parkcraft.bismuth_ore": "Bismuth Ore",
+
+ "creativetab.parkcraft": "ParkCraft"
 
 
 }

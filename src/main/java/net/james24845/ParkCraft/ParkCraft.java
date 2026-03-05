@@ -1,6 +1,7 @@
 package net.james24845.ParkCraft;
 
 import net.james24845.ParkCraft.block.ModBlocks;
+import net.james24845.ParkCraft.item.ModCreativeModeTabs;
 import net.james24845.ParkCraft.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -49,11 +50,13 @@ public class ParkCraft {
         NeoForge.EVENT_BUS.register(this);
 
 
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         // Register the item to a creative tab
-        modEventBus.addListener(this::addCreative);
+ //       modEventBus.addListener(this::addCreative);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -67,21 +70,21 @@ public class ParkCraft {
     }
 
     // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+   // private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
 
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS)  {
-            event.accept(ModItems.BISMUTH);
-            event.accept(ModItems.RAW_BISMUTH);
-            event.accept(ModItems.STEEL_INGOT);
-            event.accept(ModItems.LARCADIA);
-        }
+     //   if(event.getTabKey() == CreativeModeTabs.INGREDIENTS)  {
+   //         event.accept(ModItems.BISMUTH);
+   //         event.accept(ModItems.RAW_BISMUTH);
+   //         event.accept(ModItems.STEEL_INGOT);
+   //         event.accept(ModItems.LARCADIA);
+  //      }
 
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
-            event.accept(ModBlocks.BISMUTH_BLOCK);
-            event.accept(ModBlocks.BISMUTH_ORE);
-        }
-    }
+   //     if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+   //         event.accept(ModBlocks.BISMUTH_BLOCK);
+    //        event.accept(ModBlocks.BISMUTH_ORE);
+    //    }
+ //   }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
