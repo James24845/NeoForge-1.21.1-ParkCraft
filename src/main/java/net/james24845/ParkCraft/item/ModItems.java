@@ -27,8 +27,8 @@ public class ModItems {
     Beams, Supports, Tracks, Coaster Tracks, also misc. material in crafting recipes
      */
 
-  //  public static final DeferredItem<Item> LARCADIA = ITEMS.register("larcadia",
-  //          () -> new Item(new Item.Properties()));
+   public static final DeferredItem<Item> LARCADIA = ITEMS.register("larcadia",
+            () -> new Item(new Item.Properties()));
 
     /*
     Larcadia, otherwise known as a common crystal in the ground. Will be used for progression within the mod and for
