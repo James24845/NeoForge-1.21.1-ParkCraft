@@ -27,13 +27,25 @@ public class ModItems {
     Beams, Supports, Tracks, Coaster Tracks, also misc. material in crafting recipes
      */
 
-    public static final DeferredItem<Item> LARCADIA = ITEMS.register("larcadia",
-            () -> new Item(new Item.Properties()));
+  //  public static final DeferredItem<Item> LARCADIA = ITEMS.register("larcadia",
+  //          () -> new Item(new Item.Properties()));
 
     /*
     Larcadia, otherwise known as a common crystal in the ground. Will be used for progression within the mod and for
     different coaster tiers.
      */
+
+   // public static final DeferredItem<Item> STEEL_ROD = ITEMS.register("steel_rod",
+   //     () -> new Item(new Item.Properties()));
+
+//Steel Rod
+
+  //  public static final DeferredItem<Item> STEEL_BEAM = ITEMS.register(":steel_beam",
+  //          () -> new Item(new Item.Properties()));
+    //Steel Beam
+
+
+
 
 
     public static void register(IEventBus eventBus){
