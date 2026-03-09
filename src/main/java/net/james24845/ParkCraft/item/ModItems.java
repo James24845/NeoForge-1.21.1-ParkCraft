@@ -35,6 +35,10 @@ public class ModItems {
     different coaster tiers.
      */
 
+    //public static final DeferredItem<Item> WOODEN_POST = ITEMS.register("wooden_post",
+        //    () -> new Item(new Item.Properties()));
+
+
    // public static final DeferredItem<Item> STEEL_ROD = ITEMS.register("steel_rod",
    //     () -> new Item(new Item.Properties()));
 
